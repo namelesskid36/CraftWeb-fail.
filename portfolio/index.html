@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/portfolio/assets/css/homepg-style.css" />
+    <link rel="stylesheet" href="/portfolio/assets/css/style.css" />
+    <script src="/portfolio/assets/js/nav.js"></script>
+    <title>Sudip Awasthi</title>
+    <style>
+        /* Additional CSS if needed */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">Sudip Awasthi</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="/portfolio/homepage.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Sudip Awasthi</span>
+                    <span class="highlight"><strong class="bold">a Kind of</strong> <strong class="bold">Web Developer</strong></span>
+                </h1>
+                <p class="description">
+                    I'm Sudip Awasthi, a budding web developer with a passion for crafting digital experiences. With a keen eye for design and a knack for coding, I thrive on turning ideas into interactive websites and applications. Constantly seeking to expand my skills and stay up-to-date with the latest trends in technology, I'm driven by a desire to create meaningful and user-friendly digital solutions. From front-end aesthetics to back-end functionality, I'm dedicated to delivering high-quality work that exceeds expectations.
+                </p>
+                
+                <div class="action__btns">
+                    <button class="portfolio" onclick="window.location.href='/portfolio/homepage.html'">Know more</button>
+                    
+                </div>
+            </div>
+            <div class="image">
+                <img src="/portfolio/assets/images_icons/profile.jpg" alt="profile" />
+            </div>
+        </div>
+    </section>
+    <div class="additional-text hidden">
+        <p class="description">
+            <!-- Content from another HTML file will be inserted here -->
+        </p>
+    </div>
+    <!--
+    <div class="action__btns">
+        <button class="portfolio read-more" style="margin: 0 auto;">Read more</button>
+    </div>
+    
+    <script>
+        // Initially hide the additional text
+        const additionalText = document.querySelector('.additional-text');
+        additionalText.style.display = 'none';
+    
+        // Toggle visibility of additional text
+        const readMoreBtn = document.querySelector('.read-more');
+    
+        readMoreBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default button behavior
+    
+            if (additionalText.style.display === 'none') {
+                // Fetch content from another HTML page
+                fetch('../image-curousel/index.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert fetched content into the additional text element
+                        document.querySelector('.description').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+    
+                additionalText.style.display = 'block';
+                readMoreBtn.textContent = 'Read less';
+            } else {
+                additionalText.style.display = 'none';
+                readMoreBtn.textContent = 'Read more';
+            }
+        });
+        </script> -->
+</body>
+</html>
