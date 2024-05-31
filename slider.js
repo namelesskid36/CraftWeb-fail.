@@ -1,13 +1,13 @@
 const swiper = new Swiper('.blog-slider', {
     spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
+    effect: 'fade',  //slide
+    loop: true,  //eslai false ma rakda herneyy ok
     mousewheel: {
-      invert: false,
+      invert: false, 
     },
-    // autoHeight: true,
     pagination: {
       el: '.blog-slider__pagination',
       clickable: true,
     }
-});
+  });
+  
